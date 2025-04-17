@@ -1,42 +1,75 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
+/* General Styles */
+* {
 
-*/
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 0 auto;
-    width: 720px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: #1D3557;
 }
 
-h1,
-h2 {
-    border-radius: 10px;
-    padding: 5px 20px;
-    margin: 10px;
-}
-
+/* Headings */
 h1 {
     font-size: 32px;
     background-color: #1D3557;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 h2 {
     font-size: 18.72px;
-    width: 355px;
     background-color: #457B9D;
-    padding: 5px 40px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 20px auto;
 }
 
 h3 {
     font-size: 25px;
-    margin: 0;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/torshov.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Activities Section */
+.activities-section {
+    background-color: #F1FAEE;
+    padding: 40px 20px 10px;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.activity {
+    width: 220px;
+    text-align: center;
 }
 
 .activity-img {
@@ -44,50 +77,39 @@ h3 {
     border-radius: 50%;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 343px;
-    margin: 0 auto;
-    color: #fff;
-    background: url('images/torshov.jpg') center/cover no-repeat;
-}
-
-.activities-section {
-    padding: 40px 40px 10px;
-    background-color: #F1FAEE;
-    color: #1D3557;
-}
-
-.activities-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 50px;
-}
-
-.activity {
-    width: 204px;
-}
-
+/* Guide Section */
 .guide-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    margin: 50px auto;
+    flex-wrap: wrap;
+    margin: 50px 20px;
     padding: 25px;
-    color: #1D3557;
     background-color: #A8DADC;
-    border: 5px solid transparent;
-    border-bottom-color: #1D3557;
+    border-bottom: 5px solid #1D3557;
     border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    gap: 20px;
 }
 
 .guide-section-img {
     width: 180px;
     border-radius: 10px;
+}
+
+.guide-section-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.guide-section-info h3 {
+    margin: 0;
+}
+
+.guide-section-info h4 {
+    margin-top: 10px;
 }
